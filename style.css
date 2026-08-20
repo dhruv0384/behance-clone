@@ -22,9 +22,11 @@ nav{
     display: flex;
     align-items: center;
     width: 540px;
-    justify-content: space-around;
+    justify-content: start;
+    gap: 32px;
     font-size: 16px;
     font-weight: 600;
+    padding-left: 16px;
 }
 
 .nav-logo{
@@ -125,9 +127,11 @@ a{
     height: 100%;
     width: 500px;
     align-items: center;
-    justify-content: space-around;
+    justify-content:end;
+    gap: 16px;
     font-size: 16px;
     font-weight: 600;
+    padding-right: 16px;
 }
 
 .nav-button {
@@ -177,16 +181,21 @@ a{
 
 .search-div-wrapper2{
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
-    width: 1392px;
+    width: 100%;
     height: 44px;
     margin: 20px;
+    gap: 12px;
     /* font-weight: 500; */
 }
 
 .filter-div{
     display: flex;
+    /* width: 120px; */
+    flex-wrap: nowrap;
+    box-sizing: border-box;
+    /* flex-shrink: 1; */
 }
 
 .filter-button{
@@ -194,8 +203,8 @@ a{
     background-color: white;
     border-radius: 25px;
     padding: 12px;
-    border-width: 0.5px solid rgba(126, 126, 126, 0.5);
-    width: 120px;
+    border: 0.5px solid rgba(126, 126, 126, 0.7);
+    width: 100%;
     font-weight: bold;
     color: rgba(0, 0, 0, 0.6);
 }
@@ -209,6 +218,7 @@ a{
     border-radius: 25px;
     font-size: 16px;
     padding: 12px;
+    gap: 12px;
     /* font-weight: 500; */
 }
 
@@ -224,7 +234,12 @@ a{
     border: none;
     font-size: 16px;
     flex-grow: 1;
+    flex-shrink: 1;
     font-weight: 500;
+}
+
+.search-categories{
+    gap: 12px;
 }
 .search-categories a{
     width: 40%;
@@ -232,27 +247,21 @@ a{
     justify-content: space-around;
     border: 0.5px solid rgba(126, 126, 126, 0.5);
     background-color: white;
-    margin-left: 8px;
-    margin-right: 8px;
     border-radius: 16px;
     padding: 4px 14px 4px 14px;
     font-size: 14px;
     font-weight:500;
 }
 
-.search-categories .pipe {
-    margin-left: 8px;
-    margin-right: 8px;
-}
 
-.upload-icon-div{
+/* .upload-icon-div{
     margin-left: 8px;
     margin-right: 8px;
 }
 
 .search-icon{
     margin: 0px 8px 0px 8px;
-}
+} */
 
 .recommend-button{
     background: none;
@@ -264,11 +273,6 @@ a{
 
 .sort-icon{
     margin-right: 8px;
-}
-
-.solid-down-icon{
-    margin: 0;
-    padding: 0;
 }
 
 .categories-bar-wrapper{
@@ -310,3 +314,90 @@ a{
     background-image: linear-gradient(rgba(0, 0, 255, 0.6), rgba(0, 0, 255, 0.6)),
         url("./assets/category-bg.jpeg");
 }
+
+
+
+@media (max-width: 1200px){
+    .adobe-logo{
+        display: none;
+    }
+    .recommend-span{
+        display: none;
+    }
+    .search-assets{
+        display: none;
+    }
+    .search-images{
+        display: none;
+    }
+    .filter-button span {
+        display: none;
+    }
+}
+
+
+
+
+@media(max-width: 1080px){
+    .nav-trial-div{
+        display: none;
+    }
+
+    .nav-share-div{
+        display: none;
+    }
+
+    .nav-account{
+        display:none;
+    }
+
+    .adobe-logo{
+        display:none;
+    }
+
+    .nav-explore{
+        display: none;
+    }
+
+    .nav-jobs{
+        display: none;
+    }
+
+    .nav-resources-div{
+        display: none;
+    }
+
+    .pipe{
+        display: none;
+    }
+
+    .nav-hire-div{
+        display: none;
+    }
+
+    .upload-icon-div{
+        display: none;
+    }
+}
+
+
+@media(max-width: 1000px){
+    .search-categories{
+        display: none;
+    }
+
+}
+
+
+@media(max-width: 800px){
+    .solid-down-icon{
+        display: none;
+    }
+}
+
+/* @media(max-width: 200px){
+    .search-input{
+        display: none;
+    }
+
+} */
