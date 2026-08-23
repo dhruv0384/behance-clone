@@ -717,9 +717,35 @@ a{
     background-color: rgba(0, 0, 0, 0.85);
     padding: 80px 40px;
     gap: 40px;
-
+    flex-wrap: wrap;
     border-bottom: 1px solid white;
 
+}
+
+.footer-lvl2{
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.85);
+    padding: 20px 30px;
+    color: white;
+    font-size: 13px;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.footer-lvl2-left{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-lvl2-right{
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.footer-lvl2-right a{
+    color: white;
 }
 
 .footer-logo img{
