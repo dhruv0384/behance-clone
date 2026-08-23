@@ -8,7 +8,7 @@
 nav{
     position:sticky;
     top:0;
-    z-index: 10;
+    z-index: 11;
     box-sizing: border-box;
     display: flex;
     height: 55px;
@@ -280,9 +280,9 @@ a{
     z-index: 10;
     background-color: white;
     top: 139px;
+    padding-left: 8px;
     padding-bottom: 10px;
     margin-bottom: 10px;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .categories-bar{
@@ -401,3 +401,122 @@ a{
     }
 
 } */
+
+.cards{
+    margin: 20px;
+}
+
+.cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 20px;
+    /* row-gap: 80px; */
+}
+
+.card{
+    aspect-ratio: 1/1;
+    min-width: 0;
+}
+
+.first-line{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 4px;
+}
+
+.first-line a{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.likes{
+    white-space: nowrap;
+}
+
+.views{
+    white-space: nowrap;
+}
+
+.stats{
+    display: flex;
+    justify-content: end;
+    gap: 8px;
+    font-size: 12px;
+}
+
+.second-line{
+    font-size: 12px;
+}
+
+
+.hero{
+    min-height: 75vh;
+    position: relative;
+    overflow: hidden;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.hero-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    min-height: 75vh;
+    z-index: 3;
+
+}
+
+.hero-content h1 {
+    font-size: 80px;
+    line-height: 0.85;
+}
+
+.hero-content h1 span{
+    color: blue;
+    display: block;
+}
+
+.hero-content h2{
+    font-weight: lighter;
+    font-size: 16px;
+    max-width: 400px;
+    margin: 30px 0px;
+    line-height: 1.5;
+}
+
+.hero-content-a-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+    font-size: 16px;
+    flex-wrap: wrap;
+}
+
+.design1{
+    text-decoration: none;
+    background-color: blue;
+    color: white;
+    padding: 10px 30px;
+    border-radius: 30px;
+    font-weight: 550;
+}
+
+.design2{
+    text-decoration: none;
+    background-color: #0055ff0c;
+    border: 1px solid rgb(224, 234, 255);
+    border-radius: 30px;
+    padding: 10px 30px;
+    font-weight: 550;
+    color: blue;
+}
